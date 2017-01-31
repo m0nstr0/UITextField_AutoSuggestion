@@ -117,7 +117,7 @@ static char keyboardFrameBeginRectKey;
     if (!self.alphaView) {
         self.alphaView = [[UIView alloc] initWithFrame:appDelegateWindow.bounds];
         self.alphaView.userInteractionEnabled = true;
-        self.alphaView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
+        self.alphaView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.0];
         [appDelegateWindow addSubview:self.alphaView];
     }
     
@@ -141,7 +141,7 @@ static char keyboardFrameBeginRectKey;
         emptyTableLabel.textAlignment = NSTextAlignmentCenter;
         emptyTableLabel.font = [UIFont systemFontOfSize:16];
         emptyTableLabel.textColor = [UIColor grayColor];
-        emptyTableLabel.text = @"No matches";
+        emptyTableLabel.text = @"Нет результатов";
         self.tableView.backgroundView = emptyTableLabel;
     } else {
         self.tableView.backgroundView = nil;
