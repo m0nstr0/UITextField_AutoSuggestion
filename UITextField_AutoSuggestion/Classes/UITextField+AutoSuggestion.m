@@ -114,12 +114,12 @@ static char keyboardFrameBeginRectKey;
         self.tableView.tableFooterView = [UIView new];
     }
     
-    if (!self.alphaView) {
+    /*if (!self.alphaView) {
         self.alphaView = [[UIView alloc] initWithFrame:appDelegateWindow.bounds];
         self.alphaView.userInteractionEnabled = true;
         self.alphaView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.0];
         [appDelegateWindow addSubview:self.alphaView];
-    }
+    }*/
     
     self.tableView.frame = self.textFieldRectOnWindow;
     [self.tableContainerView addSubview:self.tableView];
